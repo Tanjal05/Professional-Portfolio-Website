@@ -29,8 +29,3 @@ A modern, responsive, and interactive full-stack developer portfolio built to sh
 - 📊 Customer Shopping Dashboard
 - 🩺 Medical Assistant
 
-## 🚀 Getting Started
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/portfolio.git
