@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanjal Kumar — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Web Developer specializing in React, Node.js, and modern web technologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ──────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="inner">
+    <a href="#hero" class="nav-logo">dev<span>.</span>portfolio</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Hire Me →</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">available for opportunities</div>
+        <h1 class="hero-title">
+          <span class="name">Tanjal Kumar</span>
+          <span class="accent">Full Stack</span><br>Developer
+        </h1>
+        <div class="hero-subtitle-line">
+          <span class="mono">$ role =</span>
+          <span id="typewriter"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-desc">
+          I build clean, performant web experiences — from pixel-perfect frontends to
+          scalable backends. Currently interning at Future Interns, crafting real-world
+          projects with React, Node.js, and MongoDB.
+        </p>
+        <div class="hero-actions">
+    <<a href="#projects" class="btn-primary">View My Work ↓</a>
+
+    <a href="Tanjal.resume.pdf"
+       class="btn-ghost"
+       target="_blank">
+       Resume
+    </a>
+
+    <a href="#contact" class="btn-ghost">Let's Talk</a>
+</div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+            <div class="terminal-title">~/portfolio — zsh</div>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line">
+              <span class="t-prompt">➜</span>
+              <span class="t-cmd">whoami</span>
+            </div>
+            <div class="t-line"><span class="t-out t-comment"># Full Stack Developer</span></div>
+            <div class="t-line" style="margin-top:12px">
+              <span class="t-prompt">➜</span>
+              <span class="t-cmd">cat skills.json</span>
+            </div>
+            <div class="t-line"><span class="t-out">{</span></div>
+            <div class="t-line" style="padding-left:16px">
+              <span class="t-key">"frontend"</span><span class="t-out">: [</span><span class="t-val">"React", "HTML", "CSS"</span><span class="t-out">],</span>
+            </div>
+            <div class="t-line" style="padding-left:16px">
+              <span class="t-key">"backend"</span><span class="t-out">: [</span><span class="t-val">"Node.js", "Express"</span><span class="t-out">],</span>
+            </div>
+            <div class="t-line" style="padding-left:16px">
+              <span class="t-key">"database"</span><span class="t-out">: [</span><span class="t-val">"MongoDB", "MySQL"</span><span class="t-out">],</span>
+            </div>
+            <div class="t-line" style="padding-left:16px">
+              <span class="t-key">"status"</span><span class="t-out">: </span><span class="t-val">"open_to_work"</span>
+            </div>
+            <div class="t-line"><span class="t-out">}</span></div>
+            <div class="t-line" style="margin-top:12px">
+              <span class="t-prompt">➜</span>
+              <span class="t-cmd">npm run build <span class="t-comment"># let's create something ✨</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          🚀 Open to Internships & Projects
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Skills ───────────────────────────────────────────────── -->
+<section id="skills">
+  <div class="container">
+    <p class="section-label fade-in">// Tech Stack</p>
+    <h2 class="section-title fade-in">What I Work With</h2>
+    <p class="section-sub fade-in">Technologies I use to bring ideas from concept to production.</p>
+    <div class="skills-grid">
+      <div class="skill-chip fade-in"><span class="skill-icon">⚛️</span> React.js</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🟨</span> JavaScript</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🎨</span> HTML / CSS</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">💨</span> Tailwind CSS</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🟩</span> Node.js</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🚂</span> Express.js</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🔐</span> REST APIs</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🔑</span> JWT Auth</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🍃</span> MongoDB</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🐬</span> MySQL</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🐙</span> Git / GitHub</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">🐋</span> Docker</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">☁️</span> Vercel / Netlify</div>
+      <div class="skill-chip fade-in"><span class="skill-icon">📬</span> Postman</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Projects ─────────────────────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label fade-in">// Work</p>
+    <h2 class="section-title fade-in">Featured Projects</h2>
+    <p class="section-sub fade-in">Stuff I've built — real problems, real solutions.</p>
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="project-thumb thumb-1">🌐</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <h3 class="project-name">Portfolio Website</h3>
+          <p class="project-desc">
+            This very site — a responsive, SEO-friendly personal portfolio with a
+            contact form backed by Node.js and email notifications via Nodemailer.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-thumb thumb-2">🥗</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3 class="project-name">NutriScan</h3>
+          <p class="project-desc">
+            AI-powered nutrition scanner that identifies food items,
+displays calories and nutritional values, and helps users
+track healthier eating habits with a simple, intuitive interface.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-thumb thumb-3">🎓</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <h3 class="project-name">StudyNotion</h3>
+          <p class="project-desc">
+            Full-stack EdTech platform with secure authentication,
+course management, student dashboard, instructor panel,
+and payment integration for online learning.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-thumb thumb-4">🩺</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Swing</span>
+            <span class="tag">SQL</span>
+          </div>
+          <h3 class="project-name">Medical Assistant</h3>
+          <p class="project-desc">
+           Desktop healthcare management system for maintaining
+patient records, appointments, prescriptions, and medical
+history using Java and MySQL.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── About ─────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <p class="section-label fade-in">// About</p>
+    <h2 class="section-title fade-in">Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>
+          Hi! I'm a passionate full-stack developer currently completing my internship at
+          <strong>Future Interns</strong>, where I'm building production-grade applications
+          and growing fast.
+        </p>
+        <blockquote class="about-highlight">
+          "I believe great software is invisible — it just works, delights users, and
+          solves real problems without getting in the way."
+        </blockquote>
+        <p>
+          My background blends frontend design sensibility with backend engineering
+          rigour. I love working across the entire stack — from crafting accessible,
+          performant UIs in React to designing clean REST APIs in Node.js.
+        </p>
+        <p>
+          When I'm not coding, I explore open-source projects, write about what I'm
+          learning, and contribute to developer communities online.
+        </p>
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Months Interning</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+        <a href="#" class="btn-primary" style="display:inline-flex;margin-top:8px">
+          📄 Download Resume
+        </a>
+      </div>
+
+      <div class="fade-in">
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-date">2026 — Present</div>
+            <div class="tl-title">Full Stack Developer Intern</div>
+            <div class="tl-org">Future Interns · Remote</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">2024</div>
+            <div class="tl-title">Started learning React & Node.js</div>
+            <div class="tl-org">Self-taught via freeCodeCamp, The Odin Project</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">2023</div>
+            <div class="tl-title">First line of code — HTML/CSS</div>
+            <div class="tl-org">Computer Science undergraduate</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">2023</div>
+            <div class="tl-title">B.Tech Computer Science</div>
+            <div class="tl-org">Vivekananda Institute Of Technology · Pursuing 2027</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ───────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label fade-in">// Contact</p>
+    <h2 class="section-title fade-in">Let's Build Something</h2>
+    <div class="contact-inner">
+      <div class="contact-info fade-in">
+        <h3>Open to opportunities 👋</h3>
+        <p>
+          Whether you're looking for a developer for a project, an internship, or just
+          want to talk tech — my inbox is always open.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:kumartanjal0@email.com" class="contact-link">
+            <span class="contact-link-icon">📧</span>
+            <div class="contact-link-text">
+              kumartanjal0@email.com
+              <span>Email — fastest response</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/tanjal-kumar-423072250" class="contact-link" target="_blank">
+            <span class="contact-link-icon">💼</span>
+            <div class="contact-link-text">
+              linkedin.com/in/TanjalKumar
+              <span>LinkedIn</span>
+            </div>
+          </a>
+          <a href="https://github.com/Tanjal05" class="contact-link" target="_blank">
+            <span class="contact-link-icon">🐙</span>
+            <div class="contact-link-text">
+              github.com/Tanjal05
+              <span>GitHub — see my code</span>
+            </div>
+          </a>
+          <a href="https://twitter.com/tanjal05" class="contact-link" target="_blank">
+            <span class="contact-link-icon">🐦</span>
+            <div class="contact-link-text">
+              @tanjal05
+              <span>Twitter / X</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="fade-in" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about your project or opportunity…" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">
+          Send Message ✉️
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+    <p>© 2025 Your Name · Built with ❤️ and too much coffee</p>
+    <div class="social-links">
+      <a href="#" class="social-link" title="GitHub">🐙</a>
+      <a href="#" class="social-link" title="LinkedIn">💼</a>
+      <a href="#" class="social-link" title="Twitter">🐦</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Link to external JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
